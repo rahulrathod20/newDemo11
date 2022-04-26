@@ -6,15 +6,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Demo 
 
 {     
-        public void m2()
-      {     
+    public void m2()
+    {     
 	System.out.println("hi");
-       }
- 
-      public void m3()
-      {     
+     }
+
+    public void m3()
+    {     
 	System.out.println("hi");
-       }
+     }
+    
 
 	public static void main(String[] args) {
 		
@@ -23,5 +24,11 @@ public class Demo
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("http://demowebshop.tricentis.com/");
+		
+		Demo d=new Demo();
+		 d.m2();
+		 d.m3();
+				
+		
 	}
 }
